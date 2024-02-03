@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
 
 app.post("/authenticate", async (req, res) => {
     const { username } = req.body;
-
+    // console.log(username);
     try {
         const r = await axios.put(
             'https://api.chatengine.io/users/',
